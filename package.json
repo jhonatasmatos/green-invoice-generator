@@ -1,0 +1,31 @@
+{
+  "name": "green-invoice-generator",
+  "version": "1.0.0",
+  "description": "A tool to help generate green invoice for those who work in Portugal",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:eslint": "eslint --ext js --fix .",
+    "format:prettier": "prettier --write .",
+    "format": "run-s format:*",
+    "lint:eslint": "([ \"$CI\" = true ] && eslint --ext js --quiet -f codeframe . || eslint --ext js .)",
+    "lint:prettier": "prettier --check .",
+    "lint": "run-s lint:prettier lint:eslint"
+  },
+  "keywords": [],
+  "author": "Jhonatas Matos",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^19.2.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-formatter-codeframe": "^7.32.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "2.7.1"
+  }
+}

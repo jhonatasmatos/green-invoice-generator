@@ -1,0 +1,37 @@
+## [START] Keep in sync with .gitignore
+# Dependencies
+node_modules
+
+# Production
+build/
+lib/
+
+# Generated files
+**/*.tsbuildinfo
+*.tgz
+.cache-loader
+test/output-*/
+.dev_profile*
+coverage/
+generated/
+.eslintcache
+/.cache/
+
+# IDE Artifacts
+.vscode
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+
+## [END] Keep in sync with .gitignore
+
+# Prettier-only ignores.
+CHANGELOG.md
+package-lock.json
+test/assets/
